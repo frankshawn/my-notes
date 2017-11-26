@@ -52,3 +52,17 @@
 1. 模板表达式不能引用任何全局命名空间中的成员，比如：window、console
 **情况 1、2、3、4 是可能引发副作用的 javascript 表达式**
 
+#### Currency Pipe
+**语法格式：**
+expression | currency[:currencyCode[:symbolDisplay[:digitInfo]]]
+参数 currencyCode 表示要格式化的目标货币格式，其值为 ISO 4217 货币码，如：CNY 为人民币，
+USD 为美元，EUR 为欧元等。
+参数 symbolDisplay 表示以该类型为货币的哪种显示格式，其值为 Boolean 类型，true 表示
+货币符号，如：$ 等，false 则表示显示 ISO 4217 货币码，如：CNY、USD 等。
+参数 digitInfo 参照 DecimalPipe 管道中的格式说明。
+
+#### 关于管道
+##### 纯管道
+> 如果所转换的目标是对象，修改对象的内部属性，并不会执行 transform 函数。
+##### 非纯管道
+> angular 组件在每个变化周期都会监测并执行 transform 函数。
