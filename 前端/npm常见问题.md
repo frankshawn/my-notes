@@ -1,3 +1,10 @@
-### npm install 下载缓慢？  
-> - 方法1、`npm config set registry https://registry.npm.taobao.org`
-- 方法2、使用 cnpm 替代 npm，参照：[https://npm.taobao.org/](https://npm.taobao.org/)
+### 参考链接：
+[阮一峰--npm模块管理器](http://javascript.ruanyifeng.com/nodejs/npm.html)
+
+### npm install 下载缓慢？
+> * 方法1、`npm config set registry https://registry.npm.taobao.org`
+> * 方法2、使用 cnpm 替代 npm，请查看：[https://npm.taobao.org/](https://npm.taobao.org/)
+
+### 依赖包在不同环境下一致性的问题
+> * 方法1、npm shrinkwrap
+> * 方法2、使用 yarn 替代 npm

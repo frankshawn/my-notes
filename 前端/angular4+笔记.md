@@ -36,24 +36,25 @@
 >1. 下载 angular.js ，将其添加到工程所在的目录中
 
 ### 动态组件的开发
-1. 若动态内容，在组件的内部不需要重复出现，可使用 ng-content
-1. 若动态内容，在组件内部存在循环遍历的情况，可使用 ngTemplateOutlet
+> 1. 若动态内容，在组件的内部不需要重复出现，可使用 ng-content
+> 1. 若动态内容，在组件内部存在重复使用的情况，可使用 ngTemplateOutlet
 
 ### attr. 的使用场景
-设置 HTML 标签特性使用 attr.attributeName，设置 DOM 特性时，直接使用属性绑定。
+> 设置 HTML 标签特性使用 attr.attributeName，设置 DOM 特性时，直接使用属性绑定。
 
 ### 模板插值相关
 #### 不能用的：
-1. 带有 new 运算符的表达式
-1. 赋值表达式
-1. 带有 ; 或者 , 的链式表达式
-1. 带有自增或者自减操作的表达式
-1. 不支持位运算，| 在模板表达式中是管道
-1. 模板表达式不能引用任何全局命名空间中的成员，比如：window、console
-*其中使用场景 1、2、3、4 是可能引发副作用的 javascript 表达式*
+> 1. 带有 new 运算符的表达式
+> 1. 赋值表达式
+> 1. 带有 ; 或者 , 的链式表达式
+> 1. 带有自增或者自减操作的表达式
+> 1. 不支持位运算，| 在模板表达式中是管道
+> 1. 模板表达式不能引用任何全局命名空间中的成员，比如：window、console
+>
+> *其中使用场景 1、2、3、4 是可能引发副作用的 javascript 表达式*
 
 ### Currency Pipe
-**语法格式：**
+> **语法格式：**
 expression | currency[:currencyCode[:symbolDisplay[:digitInfo]]]
 参数 currencyCode 表示要格式化的目标货币格式，其值为 ISO 4217 货币码，如：CNY 为人民币，
 USD 为美元，EUR 为欧元等。
@@ -69,5 +70,5 @@ USD 为美元，EUR 为欧元等。
 
 ### 快速引用 node_modules 中的 css 文件
 > 使用：`@import "~bootstrap/dist/css/bootstrap.css";` 相当于：`@import "../node_modules/bootstrap/dist/css/bootstrap.css";`，
-"~" 前缀和 `node_modules` 的路径相等。具体[请查看](https://github.com/webpack-contrib/sass-loader#imports)。
+"~" 前缀和 `node_modules` 的路径相等。详情[请点击](https://github.com/webpack-contrib/sass-loader#imports)链接查看。
 
