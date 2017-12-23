@@ -71,4 +71,3 @@ USD 为美元，EUR 为欧元等。
 ### 快速引用 node_modules 中的 css 文件
 > 使用：`@import "~bootstrap/dist/css/bootstrap.css";` 相当于：`@import "../node_modules/bootstrap/dist/css/bootstrap.css";`，
 "~" 前缀和 `node_modules` 的路径相等。详情[请点击](https://github.com/webpack-contrib/sass-loader#imports)链接查看。
-
