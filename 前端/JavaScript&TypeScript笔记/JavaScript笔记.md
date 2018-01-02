@@ -46,3 +46,15 @@ f(undefined, 1) // [1, 1]
 ## ES6 模块与 CommonJS 模块的差异
 >1. CommonJS 模块输出的是一个值的拷贝，ES6 模块输出的是值的引用
 >1. CommonJS 模块是运行时加载，ES6 模块是编译时输出接口
+
+## Error 对象
+>1. Error: 通用 Error 对象，参考链接：[请点击](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error)
+>1. EvalError: 执行全局的 eval 函数发生错误时的 Error 对象（还未纳入当前 es 版本中），参考链接：[请点击](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError)
+>1. InternalError: js 执行引擎内部错误的 Error 对象（尚未未标准化），参考链接：[请点击](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError)
+>1. RangeError: 数据值不在集合或者允许的值范围之内时的 Error 对象，参考链接：[请点击](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError)
+>1. ReferenceError: 使用某个变量时，如果该变量未定义时的 Error 对象，参考链接：[请点击](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError)
+>1. SyntaxError: js 引擎在对文件进行语法解析出现语法错误时的 Error 对象，参考链接：[请点击](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError)
+>1. TypeError: 数据值不是期望的数据类型时的 Error 对象，参考链接：[请点击](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError)
+>1. URIError: 全局的 URI 处理函数被错误地使用时的 Error 对象，参考链接：[请点击](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError)
+>
+> 由于上述所述内容，截止到 2018/01/03，部分存在尚未标准化的问题(error 的类型、constructor 的入参等)，因此应避免使用未标准化的内容，以免造成语法错误。
