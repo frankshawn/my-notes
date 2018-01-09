@@ -1,5 +1,6 @@
 ### 设置viewport
 `<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>`
+*此处：device-width 指代设备的宽度，且是设备独立像素(逻辑像素)的宽度*
 
 ### 设置格式检测
 `<meta name="format-detection" content="telephone=no"/>
