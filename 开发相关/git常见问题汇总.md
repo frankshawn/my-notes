@@ -17,3 +17,18 @@ git status
 ```
 或者  
 `git config receive.denyCurrentBranch ignore`
+
+### 设置本地仓库与远程仓库之间的关联关系
+> git branch --set-upstream-to=origin/develop
+
+### 使用SSH管理git仓库
+1. 在 linux 服务器端：
+    + 添加 git 用户组：groupadd git
+    + 添加 git 用户：adduser git
+    + 创建 git 仓库目录：mkdir git-repository
+    + 修改 git 目录权限：chown -R git:git git-repository/
+1. 在客户端：
+    + git remote add origin ssh://git@ip地址/home/git/git-repository/.git
+    + git branch --set-upstream-to=origin/master
+1. 服务器端更新代码为最新版本
+    + git reset --hard
